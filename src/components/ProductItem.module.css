@@ -1,0 +1,48 @@
+
+  .card {
+    display: grid;
+    grid-template-rows: auto auto 1fr; /* Авто высота для заголовка и цены, оставшееся пространство для кнопок */
+    justify-items: center; /* Центрирование содержимого по горизонтали */
+    align-items: center; /* Центрирование содержимого по вертикали */
+    background-color: #9cc7f1;
+    color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: transform 0.2s;
+    width: 200px; /* фиксированная ширина карты для упрощения макета */
+    margin: 1rem;
+  }
+  
+  .cardTitle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .cardText {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .buttonGroup {
+    display: flex; /* Используем Flexbox для кнопок */
+    align-items: center;
+  }
+  
+  .Btn {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .Btn:hover {
+    background-color: #3cc823;
+  }
+  .countDisplay {
+    margin: 0 10px;
+    font-size: 1.2rem;
+  }
